@@ -1,0 +1,168 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.first{
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    animation: flow 3s linear infinite;
+}
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.first{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#happy{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    font-size: 75px;
+    margin-top: 10px;
+}
+#diwali{
+    display: flex;
+    font-family: Verdana, sans-serif;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 225px;
+    font-size: 250px;
+    margin-top: -100px;
+}
+#second{
+    display: flex;
+    color: aqua;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    margin-top: -200px;
+    font-size: 25px;
+    text-align: center;
+}
+.three{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 300px;
+    height: 200px;
+    margin-top: -201px;
+}
+.four{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 300px;
+    height: 200px;
+    margin-top: -205px;
+    margin-left: 1060px;
+}
+.six{
+    display: flex;
+    flex-direction: row;
+}
+#eight{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-top: 115px;
+    margin-right: 60px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+}
+.seven{
+    display: flex;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+    border-image-slice: 1;
+    width: 300px;
+    height: 200px;
+    margin-top: 110px;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    transform: rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+    body, html {
+        overflow: auto; /* Allow scrolling if necessary */
+    }
+
+    .six {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .first {
+        width: 100%; /* Full width */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    #happy {
+        font-size: 50px; /* Reduce font size */
+        margin-top: 5px; /* Adjust margin */
+        text-align: center; /* Center text */
+    }
+
+    #diwali {
+        font-size: 120px; /* Reduce font size */
+        margin-top: 0; /* Reset margin */
+        text-align: center; /* Center text */
+    }
+
+    #second {
+        font-size: 18px; /* Reduce font size */
+        margin-top: 10px; /* Adjust margin */
+        width: 90%; /* Make width responsive */
+        text-align: center; /* Center text */
+    }
+
+    .three, .four {
+        width: 80%; /* Adjust width for diya images */
+        height: auto; /* Allow height to adjust */
+        margin: 10px auto; /* Center and space out images */
+    }
+
+    #eight {
+        width: 100px; /* Reduce size for mobile */
+        height: 100px; /* Reduce size for mobile */
+        margin-top: 10px; /* Adjust margin */
+        margin-right: 0; /* Reset margin */
+    }
+
+    .seven {
+        width: 80%; /* Adjust width for the greeting box */
+        height: auto; /* Allow height to adjust */
+        margin-top: 10px; /* Adjust margin */
+        font-size: 30px; /* Reduce font size */
+        text-align: center; /* Center text */
+    }
+}
